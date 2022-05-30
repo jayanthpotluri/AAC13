@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="view port" content="width=device-width" initial-scale="1.0">
+        <title>
+            my page
+        </title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        
+        
+    </head> 
+<div class="darker">
+</div>
+
+<ul>
+    <li><a class="active" href="#Login/Register">Login/Register</a></li>
+    <li><a href="#About Us">About Us</a></li>
+    <li><a href="#Home">Home</a></li>
+  </ul>
+  <div class="container">
+      <div class="white-box">
+         <div class="button-box">
+             <div id="btn"></div>
+             <button type="button" class="toggle-btn" onclick="login()">Sign In</button>
+             <button type="button" class="toggle-btn" onclick="login()">Sign Up</button>
+         </div>
+         <h2><b>Enter Your Credentials</b></h2>
+         <form id="Sign In" class="input-group">
+             <input type="text" class="input-field" placeholder="Enter Your Email" required>
+             <input type="text" class="input-field" placeholder="Enter Your Password" required>
+             <a href="Forgot Password?">Forgot Password?</a>
+             <button type="submit" class="submit-btn">Log In</button>
+             <p>Are you a doctor? <a href="Click here">Click here</a></p>
+         </form>
+         <form id="Sign Up" class="input-group">
+            <input type="text" class="input-field" placeholder="Enter Your Firstname" required>
+            <input type="text" class="input-field" placeholder="Enter Your Lastname" required>
+            <input type="text" class="input-field" placeholder="Enter Your Email" required>
+            <input type="checkbox" class="check-box" placeholder="I accept the" required> <a href ="terms and conditions">terms and conditions</a>
+            <button type="submit" class="submit-btn">Log In</button>
+            <p>Are you a doctor? <a href="Click here">Click here</a></p>
+           
+        </form>
+
+      </div>
+      <script>
+          var x = document.getElementbyId("Sign In");
+          var y = document.getElementbyId("Sign Up");
+          var z = document.getElementbyId("btn");
+          function SignUp() {
+              x.style.left = "-400px";
+              y.style.left = "50px";
+              z.style.left = "110px";
+          }
+          function SignIn(){
+            x.style.left = "50px";
+              y.style.left = "450px";
+              z.style.left = "0px";
+          }
+      </script>
+  </div>
+
+  <div class = "overflow">
+  </div>
+  
+<footer>
+    Having issues contact us at support@gmail.com
+</footer>
+</html>
