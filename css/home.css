@@ -1,0 +1,68 @@
+#appointment-box {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 60px;
+    background: #EBF2FA;
+    border-radius: 8px;
+    box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
+}
+
+#banner {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 8px;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 66px;
+    margin: auto;
+    padding-top: 6%;
+}
+
+.text h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 600px;
+    margin: auto;
+    padding-top: 4%;
+    /* width: 20%; */
+}
+
+.location-selector {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 4%;
+}
+
+#Book {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    padding: 10px 25px;
+    background: #66ADFF;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    color: white;
+}
+
+select {
+    margin: 0px 20px;
+    padding: 8px 18px;
+    background: #F1F1F5;
+    border: 1px solid #E0E0E1;
+    border-radius: 8px;
+}
