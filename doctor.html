@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/DLogin.css" />
   </head>
 
   <body>
@@ -50,29 +50,45 @@
     </nav>
 
     <!-- Contents -->
+<div id="content">
+    <div id="appointment-box">
 
-    <div id="content">
-      <div id="appointment-box">
-        <img src="images/banner-n.jpg" alt="banner" id="banner" />
-        <div class="text">
-          <h1>Health made easy!</h1>
-          <h2>
-            Over 80 hospitals with 600 doctors specialising in 40 fileds are at
-            your fingertips. Booking an appointment has never been easier.
-          </h2>
-          <div class="location-selector">
-            <label for="location">Your Location</label>
-            <select name="cars" id="cars">
-              <option value="Kukatpally">Kukatpally</option>
-              <option value="Nizampet">Nizampet</option>
-              <option value="Miyapur">Miyapur</option>
-              <option value="Ameerpet">Ameerpet</option>
-            </select>
-            <input type="submit" value="Book an Appointment" id="Book">
-          </div>
-        </div>
-      </div>
+    <div class="text">
+        <form id="details" class="info">
+          <h5>Doctor Sign In</h5>
+          <h2><b>Enter Your Credentials</b></h2>
+          <form id1="Sign In" class="input-group">
+            <p>Doctor ID</p>
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Enter Your Email"
+              required
+            />
+            <p>Password</p>
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Enter Your Password"
+              required
+            />
+            <br />
+            <a href="Forgot Password?">Forgot Password?</a>
+            <br />
+            <br />
+            <button type="submit" class="submit-btn">Sign In</button>
+            <br />
+            <br />
+            <p>Login user? <a href="Click here">Click here</a></p>
+         </form>
+        </form>
     </div>
+    </div>
+    </div>
+    <div class="overflow">
+
+    </div>
+
 
     <!-- Footer -->
 
