@@ -37,7 +37,6 @@
     width: 600px;
     margin: auto;
     padding-top: 4%;
-    /* width: 20%; */
 }
 
 .location-selector {
@@ -56,6 +55,11 @@
     border-radius: 8px;
     font-weight: 500;
     border: none;
+    cursor: pointer;
+}
+
+.booklink{
+    text-decoration: none;
     color: white;
 }
 
