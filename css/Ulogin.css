@@ -202,10 +202,10 @@ input:focus {
     width: 97%;
     height: 46px;
     text-indent: 15px;
-    margin-top: 1%;
+    margin-top: 0.8%;
     font-size: 12px;
     font-size: 400;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 #lName {
@@ -225,8 +225,8 @@ input:focus {
     height: 46px;
     text-indent: 15px;
     width: 99%;
-    margin-bottom: 12px;
-    margin-top: 1%;
+    margin-bottom: 8px;
+    margin-top: 0.8%;
     font-size: 12px;
     font-size: 400;
 }
@@ -262,12 +262,12 @@ input[type=number] {
     cursor: pointer;
 }
 
-#TnC:checked{
+#TnC:checked {
     background: #98d4fff8;
     padding: 3px;
 }
 
-.tnC{
+.tnC {
     text-decoration: none;
     font-size: 12px;
     padding: 0px 3px;
@@ -278,9 +278,26 @@ input[type=number] {
 
 [data-tab-content] {
     display: none;
-  }
-  
-  .active[data-tab-content] {
+}
+
+.active[data-tab-content] {
     display: block;
-  }
-  
+}
+
+#signin {
+    animation: fadeIn 0.47s;
+}
+
+#signup {
+    animation: fadeIn 0.47s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
