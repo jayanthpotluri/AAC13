@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/* HIDDEN FOR DESKTOP */
+
+#menu{
+    display: none;
+}
+
+/* ---------------------------------------------------------- */
+
+body{
+    background: #CDE4FF;
+}
+
+#tilted-box{
+    background: #B0D5FF;
+    position: absolute;
+    width: 200%;
+    height: 115%;
+    left: -30%;
+    top: -40%;
+    transform: rotate(-13.16deg);
+}
+
+#box-container{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+#nav-contents ul{
+    list-style: none;
+}
+
+#nav-contents li{
+    display: inline;
+    padding: 25px 35px;
+}
+
+#nav-contents a{
+    text-decoration: none;
+    color: #2E2E2E;
+    font-weight: 554;
+}
+
+nav{
+    width: 100%;
+    height: 65px;
+    background: #F8F8F8;
+    position: fixed;
+    z-index: 10;
+}
+
+#nav-contents{
+    display: flex;
+    flex-direction: row;
+    max-width: 1350px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 50px;
+}
+
+#nav-logo{
+    height: 65px;
+}
+
+#content{
+    position: relative;
+    padding-top: 65px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 43px;
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 40px;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #717171;
+}
+
+#footer-list li{
+    list-style: none;
+    display: inline;
+    padding: 0px 22px;
+}
+
+#footer-list svg{
+    fill: #717171;
+    width: 20px;
+    height: 20px;
+}
+
+#footer-list a{
+    text-decoration: none;
+}
