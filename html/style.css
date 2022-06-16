@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(190, 188, 188);
+    background-size: cover;
+}
+nav{
+    font-size: 25px;
+    padding:  200px;
+    display: none;
+    color: rgb(90, 88, 88);
+    left: 70%;
+    top: auto;
+    font-style: italic;
+
+}
+nav a:hover{
+    background-color: white;
+    color: rgb(90,88,88);
+}
+nav a:hover:not(.active){
+    background-color: white;
+}
+.active {
+    background-color: rgb(117, 116, 116);
+}
+footer{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    }
+        
+              
+    .darker {
+     position: fixed;
+     top: 150%;
+     left: 35%;
+     width: 150%;
+     height: 150%;
+     background: #7e7d7d;
+     -webkit-transform: rotate(6deg);
+             transform: rotate(60deg);
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+      }
+      
+      li {
+        float: right;
+      }
+      
+      li a {
+        display: block;
+        color: rgb(12, 12, 12);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .container {
+        position: relative;
+      }
+      .white-box {
+        position: absolute;
+        z-index: 1; /* gray box will be above both green and black box */
+        background: white;
+        height: 400px;  
+        width: 80%;
+        left: 80px;
+        top: 15px;
+      }
