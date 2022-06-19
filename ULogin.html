@@ -98,22 +98,17 @@
                                 <input type="email" name="mail-signup" id="signup-mail" style="width: 98%" class="field"
                                     placeholder="Enter your Email" />
                             </div>
-                            <div class="phone-number">
-                                Phone Number
-                                <div class="number">
-                                    <input type="number" value="+91" style="flex: 1" id="country-code"
-                                        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
-                                    <input type="number" style="flex: 5" id="pNumber"
-                                        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                        placeholder="XXXXXXXXXX" />
-                                </div>
+                            <div class="password-login">
+                                <div class="password">Password</div>
+                                <input type="password" name="Password" id="login-password" class="fields"
+                                    placeholder="Enter a Password" style="margin-bottom: 3%;"/>
                             </div>
                             <div class="tnc">
                                 <input type="checkbox" name="Tnc" id="TnC" />I accept the
                                 <a href="" class="tnC">Terms and Conditions</a>
                             </div>
                             <div class="signin-button">
-                                <button type="submit" id="signin-btn">Sign up</button>
+                                <button type="submit" id="signup-btn">Sign up</button>
                                 <div class="doctor-text">
                                     Are you a Doctor?
                                     <a href="Dlogin.html" class="doctor-prompt">Click Here</a>
