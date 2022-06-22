@@ -1,0 +1,190 @@
+#appointment-box {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 60px;
+    background: #EBF2FA;
+    border-radius: 8px;
+    box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
+}
+
+#banner {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 8px;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 66px;
+    margin: auto;
+    padding-top: 6%;
+}
+
+.text h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 600px;
+    margin: auto;
+    padding-top: 4%;
+}
+
+.location-selector {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 4%;
+}
+
+#Book {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    padding: 10px 25px;
+    background: #66ADFF;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.booklink{
+    text-decoration: none;
+    color: white;
+}
+
+select {
+    margin: 0px 20px;
+    padding: 8px 18px;
+    background: #F1F1F5;
+    border: 1px solid #E0E0E1;
+    border-radius: 8px;
+}
+.graphic {
+    position:fixed;
+    top: 11.2%;
+    width: 30%;
+    background-color:#FFFFFF;
+    height: 570px;
+    border-radius: 8px 0px 0px 8px;
+}
+.text h1 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 66px;
+    margin: auto;
+    padding-top: 2%;
+    text-align: right;
+    padding-right: 20%;
+}
+.text h4 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin: auto;
+    text-align: right;
+    padding-right: 50%;
+}
+.image1 {
+    width: 100%;
+    height: 45%;
+}
+.text h2 {
+    font-weight: 550;
+    font-size: 23px;
+    line-height: 40px;
+    margin: auto;
+    text-align: left;
+    padding-left: 20px;
+}
+.text h3{
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+    margin: auto;
+    text-align: left;
+    padding-left: 20px;
+    color: #838383;
+    margin-top: 3%;
+}
+#container1 {
+    position: relative;
+    width: 58%;
+    height: 95px;
+    max-height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border:1px solid #B6B6B6;
+    left: 18%;
+}
+.image2 {
+    position: fixed;
+    width: 10%;
+    height: 13%;
+    object-position:left top;
+    right: 49.7%;
+}
+.text h6 {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 33px;
+    margin: auto;
+    color: #000000;
+    float: left;
+    padding-left: 22%;
+}
+.text h5 {
+    position: relative;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 36px;
+    margin: auto;
+    text-align: left;
+    color: #838383;
+    text-indent: 15px;
+}
+.p1 {
+    word-spacing: 2px;
+    position: relative;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 20px;
+    margin:auto;
+    text-align: right;
+    color: #838383;
+    padding-right:200px;
+}
+.p2 {
+    position: relative;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 20px;
+    margin: auto;
+    text-align: left;
+    color: #838383;
+    padding-right:370px;
+}
+.p {
+    word-spacing: 2px;
+    position: relative;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 10px;
+    margin:auto;
+    text-align: right;
+    color: #838383;
+    padding-right:195px;
+}
