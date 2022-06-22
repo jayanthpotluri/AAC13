@@ -137,7 +137,7 @@ input:focus {
 }
 
 ::placeholder {
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 200;
     font-size: 14px;
     line-height: 15px;
@@ -152,7 +152,20 @@ input:focus {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    margin-top: 7%;
+    cursor: pointer;
+}
+
+#signup-btn {
+    border: none;
+    background-color: #66ADFF;
+    border-radius: 8px;
+    padding: 10px 30px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 6%;
+    cursor: pointer;
 }
 
 .signin-button {
@@ -164,7 +177,7 @@ input:focus {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .doctor-prompt {
@@ -256,15 +269,15 @@ input[type=number] {
     height: 16px;
     margin-right: 8px;
     margin-left: 3px;
-    background: #F8F8F8;
+    background: #f1f1f5;
     border: 2px solid #DCDCDC;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 #TnC:checked {
-    background: #98d4fff8;
-    padding: 3px;
+    background: #46bbffee;
+    padding: 5px;
 }
 
 .tnC {
