@@ -1,0 +1,108 @@
+#appointment-box {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 60px;
+    background: #EBF2FA;
+    border-radius: 8px;
+    box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
+}
+
+select {
+    margin: 0px 20px;
+    padding: 8px 18px;
+    background: #F1F1F5;
+    border: 1px solid #E0E0E1;
+    border-radius: 8px;
+}
+
+
+
+
+.location-selector {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 1%;
+}
+
+
+.text{
+    width: 108px;
+height: 24px;
+left: 26px;
+top: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+    position: relative;
+
+}
+#line{
+    margin-top: 2%;
+}
+.top h1{
+    position: absolute;
+    width: 250px;
+height: 30px;
+left: 573px;
+top: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 21px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+::placeholder{
+        
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    top: 30px;
+    left: 500px;
+
+}
+.search{
+
+
+       top: 10px;
+       left: 600px;
+       
+      padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  
+   } 
+#Book {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    padding: 10px 25px;
+    background: #66ADFF;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.booklink{
+    text-decoration: none;
+    color: white;
+}
