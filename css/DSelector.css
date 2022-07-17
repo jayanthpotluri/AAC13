@@ -1,0 +1,191 @@
+#content-box {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  max-height: 800px;
+  margin: auto;
+  margin-top: 60px;
+  background: #EBF2FA;
+  border-radius: 8px;
+  box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
+}
+
+.hosp-info {
+  background-color: #FFFFFF;
+  width: 33%;
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
+  border-right: 2px solid #B6B6B6;
+}
+
+.doctor-info {
+  background-color: #EBF2FA;
+  width: 67%;
+  border-radius: 0 8px 8px 0;
+}
+
+.location {
+  color: #838383;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.locIcon {
+  padding-top: 5px;
+}
+
+.locInfo {
+  padding-left: 5px;
+}
+
+.hospImg {
+  object-fit: contain;
+  width: 100%;
+}
+
+.locationInfo {
+  padding: 10px 20px;
+}
+
+.conIcon {
+  padding-top: 3px;
+}
+
+.conInfo {
+  padding-left: 5px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: auto;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 11px;
+  color: #838383;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 11px;
+  color: #838383;
+}
+
+.prompt {
+  height: 12%;
+  width: 100%;
+}
+
+.prompt-text {
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.docResults {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resContent {
+  padding-top: 5px;
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+
+.number {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 15px;
+  height: 5%;
+}
+
+.results {
+  height: 90%;
+  overflow-y: scroll;
+  padding: 10px 0;
+}
+
+.container {
+  background: #FFFFFF;
+  width: 99%;
+  height: 22%;
+  min-height: 100px;
+  border: 2px solid #B6B6B6;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.docInfo {
+  height: 100%;
+  width: 75%;
+  padding: 7px 12px;
+}
+
+.docImg {
+  width: 20%;
+  min-width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book {
+  background: #66ADFF;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 25%;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 13px 12px;
+  border: none;
+  margin: 0 10px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.edu {
+  color: #838383;
+  font-weight: 300;
+  font-size: 12px;
+  display: inline;
+  white-space: nowrap;
+}
+
+.container .locInfo{
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.container .locIcon{
+  padding: 0;
+}
+
+.container .location{
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 3px;        
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8d8d8d;
+  border-radius: 20px;       
+}
