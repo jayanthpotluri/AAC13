@@ -31,7 +31,8 @@
           <a href="ULogin.html">
             <li id="login">Login/Register</li>
           </a>
-          <svg
+        </ul>
+        <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -39,18 +40,37 @@
             class="bi bi-list"
             viewBox="0 0 16 16"
             id="menu"
+            onclick="toggleMenu();"
           >
             <path
               fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </svg>
-        </ul>
+      </div>
+      <div id="mobmenu">
+        <a href="Home.html" style="background: #3e3e3e; color: white" onclick="toggleMenu();">
+        <div class="moblink" style="background: #3e3e3e; color: white;">
+            Home
+          </div>
+        </a>
+        <a href="AboutUs.html" onclick="toggleMenu();">
+        <div class="moblink">
+            About Us
+          </div>
+        </a>
+        <a href="ULogin.html" onclick="toggleMenu();">
+        <div class="moblink">
+            Login/Register
+          </div>
+        </a>
       </div>
     </nav>
 
     <!-- Contents -->
 
+    <div id="blackbox">
+    </div>
     <div id="content">
       <div id="appointment-box">
         <img src="images/banner-n.jpg" alt="banner" id="banner" />
@@ -68,16 +88,25 @@
               <option value="Miyapur">Miyapur</option>
               <option value="Ameerpet">Ameerpet</option>
             </select>
-            <button id="Book"><a href="book.html" class="booklink">Book an Appointment</a></button>
+            <button id="Book"><a href="appointment.html" class="booklink">Book an Appointment</a></button>
           </div>
         </div>
       </div>
     </div>
+    
 
     <!-- Footer -->
 
     <div id="footer">
-      <p>&copy; 2022 Apollo Hospitals Ltd. All rights reserved</p>
+      <p class="desk">&copy; 2022 Apollo Hospitals Ltd. All rights reserved</p>
+      <p class="mob">&copy; 2022 Apollo Hospitals Ltd.</p>
+      <div class="secured">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-lock2" viewBox="0 0 16 16" >
+          <path d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0zM7 7v1h2V7a1 1 0 0 0-2 0z"/>
+          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+        </svg>
+        Secured
+      </div>
       <ul id="footer-list">
         <li>
           <a href="">
@@ -146,4 +175,5 @@
       </ul>
     </div>
   </body>
+  <script src="js/index.js"></script>
 </html>
