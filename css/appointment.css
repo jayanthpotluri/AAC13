@@ -37,7 +37,6 @@ select {
 .box-2{
     background-color: #EBF2FA;
     border-radius: 0px 8px 0px 0px;
-    padding-left: 70px;
     padding-top: 10px;
     display: inline;
 }
@@ -53,21 +52,12 @@ select {
 }
 
 h2{
-    padding-left: 340px;
+    text-align: center;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
 }
-input[type=text]{
-    width: 35%;
-    padding: 12px 60px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 8px 8px 8px 8px;
-  }
   input[type=button]{
     display: inline-block;
     background-color: #3E3E3E;
@@ -77,17 +67,6 @@ input[type=text]{
     margin: -17px 20px;
     border: 0ch;
     color: #FFFFFF;
-  }
-  input[type=submit]{
-    display: inline-block;
-    background-color: #66ADFF;
-    width: 100px;
-    line-height: 45px;
-    border-radius: 8px 8px 8px 8px;
-    margin: -17px 20px;
-    border: 0ch;
-    color: #FFFFFF;
-    cursor: pointer;
   }
   h3{
     font-family: 'Poppins';
@@ -164,6 +143,11 @@ input[type=text]{
     border-radius: 8px;
     border-color: #B4B4B4;
   }
+  .search{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
   h6{
     position: absolute;
    font-family: 'Poppins';
@@ -220,6 +204,7 @@ input[type=text]{
     white-space: nowrap;
   }
   .container .locInfo{
+    padding-left: 4px;
     font-size: 13px;
     font-weight: 300;
   }
@@ -299,19 +284,6 @@ input[type=text]{
     margin-bottom: 5px;
   }
 
-  .container .locInfo{
-    font-size: 13px;
-    font-weight: 300;
-  }
-  
-  .container .locIcon{
-    padding: 0;
-  }
-  
-  .container .location{
-    margin: 0;
-  }
-  
   ::-webkit-scrollbar {
     width: 3px;        
   }

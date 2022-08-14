@@ -9,13 +9,14 @@
     border-radius: 8px;
     box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
 }
+
 #banner {
     position: absolute;
     width: 100%;
     bottom: 0px;
     border-radius: 8px;
 }
- 
+
 
 .text {
     text-align: center;
@@ -25,7 +26,6 @@
 .text h1 {
     font-weight: 600;
     font-size: 44px;
-    line-height: 66px;
     margin: auto;
     padding-top: 6%;
 }
@@ -34,9 +34,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    width: 600px;
     margin: auto;
     padding-top: 4%;
+    width: 100%;
+    max-width: 800px;
 }
 
 .location-selector {
@@ -58,7 +59,7 @@
     cursor: pointer;
 }
 
-.booklink{
+.booklink {
     text-decoration: none;
     color: white;
 }
@@ -69,4 +70,82 @@ select {
     background: #F1F1F5;
     border: 1px solid #E0E0E1;
     border-radius: 8px;
+}
+
+#bannermob {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 650px) and (max-height:700px){
+    #banner {
+        display: none;
+    }
+
+    #bannermob {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        border-radius: 8px;
+    }
+
+    .text h1 {
+        font-size: 34px;
+        padding-top: 4%;
+    }
+
+    .text h2 {
+        font-size: 15px;
+        padding-top: 10%;
+        width: 100%;
+    }
+
+    .text {
+        padding: 10% 12px;
+    }
+
+    .location-selector {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-height: 700px) and (max-width: 650px) {
+    #banner {
+        display: none;
+    }
+
+    #bannermob {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        border-radius: 8px;
+    }
+
+    .text h1 {
+        font-size: 32px;
+        padding-top: 8%;
+    }
+
+    .text h2 {
+        font-size: 18px;
+        padding: 0 10px;
+        padding-top: 14%;
+        width: 100%;
+    }
+
+    .text {
+        padding: 22% 8px;
+    }
+
+    .location-selector {
+        margin-top: 14%;
+    }
+    #Book{
+        margin-top: 4%;
+    }
 }

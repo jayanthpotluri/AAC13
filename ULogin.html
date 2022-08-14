@@ -99,7 +99,13 @@
                                     Password <a href="" class="forgot">Forgot password?</a>
                                 </div>
                                 <input type="password" name="Password" id="login-password" class="fields"
-                                    placeholder="Enter your Password" />
+                                    placeholder="Enter your Password" style="margin-bottom: 6px;"/>
+                            </div>
+                            <div class="showpass">
+                                <input type="checkbox" id="showpass" onclick="showPass()">
+                                <div class="passtext" onclick="showPassText()">
+                                    Show Password
+                                </div>
                             </div>
                             <div class="signin-button">
                                 <button type="submit" id="signin-btn">Sign in</button>
@@ -136,10 +142,10 @@
                             </div>
                             <div class="signin-button">
                                 <button type="submit" id="signup-btn">Sign up</button>
-                                <div class="doctor-text">
+                                <!-- <div class="doctor-text">
                                     Are you a Doctor?
                                     <a href="Dlogin.html" class="doctor-prompt">Click Here</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

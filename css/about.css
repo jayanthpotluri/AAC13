@@ -72,3 +72,69 @@ h2 {
     line-height: 33px;
     margin-bottom: 10%;
 }
+
+.mobtext{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .vert-Text {
+        display: none;
+    }
+
+    #lightbox {
+        position: absolute;
+        height: 200%;
+        width: 1200px;
+        bottom: 20%;
+        overflow: hidden;
+        background-color: #d8eaff;
+        transform: rotate(35.16deg) translateX(50px);
+        z-index: 0;
+    }
+
+    #darkbox {
+        position: absolute;
+        height: 600px;
+        width: 800px;
+        left: -85%;
+        top: -45%;
+        background-color: #cde1f6;
+        transform: rotate(-33.16deg);
+        z-index: 0;
+    }
+    .mobtext{
+        display: block;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 10%;
+    }
+    .text-box{
+        width: 100%;
+        padding: 20px;
+        margin: 5% 0;
+    }
+}
+
+@media screen and (min-height: 700px) and (max-width: 650px) {
+    .text-box{
+        margin-top: 10%;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-bottom: 45px;
+        line-height: 30px;
+    }
+}
