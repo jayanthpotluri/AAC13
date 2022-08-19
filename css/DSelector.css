@@ -114,7 +114,7 @@ h3 {
 }
 
 .container {
-  background: #FFFFFF;
+  background: #ffffff;
   width: 99%;
   height: 22%;
   min-height: 100px;
@@ -129,7 +129,7 @@ h3 {
 
 .docInfo {
   height: 100%;
-  width: 75%;
+  width: 70%;
   padding: 7px 12px;
 }
 
@@ -144,7 +144,7 @@ h3 {
   background: #66ADFF;
   border-radius: 5px;
   font-weight: 600;
-  width: 25%;
+  width: 150px;
   font-size: 14px;
   line-height: 21px;
   color: #FFFFFF;
@@ -165,7 +165,7 @@ h3 {
   font-weight: 300;
   font-size: 12px;
   display: inline;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .container .locInfo{

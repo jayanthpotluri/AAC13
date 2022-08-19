@@ -8,12 +8,15 @@
     margin-top: 60px;
     background: #EBF2FA;
     border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
 }
 
 .hosp-info {
     background-color: #FFFFFF;
     width: 30%;
+    min-width: 220px;
+    z-index: 100;
     border-radius: 8px 0 0 8px;
     overflow: hidden;
     border-right: 2px solid #B6B6B6;
@@ -21,25 +24,33 @@
 
 .doctor-info {
     background-color: #EBF2FA;
-    text-align: center;
     width: 70%;
     border-radius: 0 8px 8px 0;
+    z-index: 3;
 }
 
 .hospImg {
     object-fit: contain;
     width: 100%;
+    min-height: 200px;
 }
 
 .locationInfo {
     padding: 13px 16px;
 }
 
+.locIcon {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
 .title {
     font-size: 21px;
     font-weight: 600;
-    margin: 0 auto;
-    padding: 20px 0 0 0;
+    text-align: center;
+    padding: 2% 0 0 0;
+    color: #00003c;
+    z-index: 100;
 }
 
 .Doc {
@@ -79,16 +90,191 @@ svg {
     margin-right: 4px;
 }
 
-.api{
+.api {
     width: 100%;
-    height: 90%;
+    height: 99%;
     margin: 0;
-    padding: 0;
+    overflow: hidden;
 }
 
-.calendly-inline-widget{
+.location {
+    color: #838383;
+    display: flex;
+    flex-direction: row;
+}
+
+.locInfo {
+    font-size: 8px;
+    line-height: 9px;
+}
+
+
+.container {
+    display: none;
+    background: #FFFFFF;
+    width: 100%;
+    z-index: 10;
+    margin: auto;
+    height: 14%;
+    max-height: 75px;
+    border: 2px solid #B6B6B6;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.docInfo {
+    height: 100%;
+    width: 75%;
+    padding: 3px 5px;
+}
+
+.docImg {
+    width: 16%;
+    min-width: 120px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.name {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.edu {
+    color: #838383;
+    font-weight: 300;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+
+.calendly-inline-widget {
     height: 100%;
     max-height: 95%;
+    border-radius: 8px;
+    overflow: hidden;
     /* padding-top: 10px; */
     /* transform: translateY(-50px); */
+}
+
+#darkbox {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    left: -5%;
+    top: -40%;
+    background-color: #cde1f6;
+    transform: rotate(-25.16deg);
+    z-index: -4;
+}
+
+#lightbox {
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    bottom: 55%;
+    overflow: hidden;
+    background-color: #d8eaff;
+    transform: rotate(25.16deg);
+    z-index: -3;
+}
+
+@media screen and (min-width:650px) and (max-width:956px) {
+    .doctor-info {
+        padding: 0 15px;
+    }
+    .api{
+        padding-top: 10px;
+    }
+    #lightbox {
+        position: absolute;
+        height: 200%;
+        width: 1200px;
+        bottom: 60%;
+        overflow: hidden;
+        background-color: #d8eaff;
+        transform: rotate(35.16deg) translateX(50px);
+        z-index: -4;
+    }
+
+    #darkbox {
+        position: absolute;
+        height: 600px;
+        width: 800px;
+        left: -20%;
+        top: -25%;
+        background-color: #cde1f6;
+        transform: rotate(-33.16deg);
+        z-index: -5;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .doctor-info {
+        padding: 0 15px;
+    }
+    .api{
+        padding-top: 10px;
+    }
+    .container {
+        display: flex;
+    }
+
+    .hosp-info {
+        display: none;
+    }
+
+    .doctor-info {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .title {
+        padding: 22px 0 8px 0;
+        font-weight: 700;
+        z-index: 10;
+    }
+
+    svg {
+        margin: 0;
+        padding: 0;
+        top: 0;
+    }
+
+    #content-box {
+        margin-top: 70px;
+    }
+
+    .api {
+        height: 78%;
+    }
+
+    #content-box{
+        height: 84vh;
+    }
+    #lightbox {
+        position: absolute;
+        height: 200%;
+        width: 1200px;
+        bottom: 60%;
+        overflow: hidden;
+        background-color: #d8eaff;
+        transform: rotate(35.16deg) translateX(50px);
+        z-index: -4;
+    }
+
+    #darkbox {
+        position: absolute;
+        height: 600px;
+        width: 800px;
+        left: -85%;
+        top: -35%;
+        background-color: #cde1f6;
+        transform: rotate(-33.16deg);
+        z-index: -5;
+    }
 }

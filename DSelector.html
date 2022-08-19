@@ -31,7 +31,8 @@
           <a href="ULogin.html">
             <li id="login">Login/Register</li>
           </a>
-          <svg
+        </ul>
+        <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -39,18 +40,36 @@
             class="bi bi-list"
             viewBox="0 0 16 16"
             id="menu"
+            onclick="toggleMenu();"
           >
             <path
               fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </svg>
-        </ul>
+      </div>
+      <div id="mobmenu">
+        <a href="Home.html" style="background: #3e3e3e; color: white" onclick="toggleMenu();">
+        <div class="moblink" style="background: #3e3e3e; color: white;">
+            Home
+          </div>
+        </a>
+        <a href="AboutUs.html" onclick="toggleMenu();">
+        <div class="moblink">
+            About Us
+          </div>
+        </a>
+        <a href="ULogin.html" onclick="toggleMenu();">
+        <div class="moblink">
+            Login/Register
+          </div>
+        </a>
       </div>
     </nav>
 
     <!-- Contents -->
-
+    <div id="blackbox">
+    </div>
     <div id="content">
       <div id="content-box">
         <div class="hosp-info">
@@ -129,6 +148,8 @@
                   <button class="book">
                     Book Apointment
                   </button>
+                  <a href="consult.html">
+                  </a>
                 </div>
                 <div class="container">
 
@@ -228,4 +249,5 @@
       </ul>
     </div>
   </body>
+  <script src="js/index.js"></script>
 </html>
