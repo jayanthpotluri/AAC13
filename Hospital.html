@@ -73,7 +73,7 @@
     <div id="content">
         <div class="lightbox">
         <div id="appointment-box">
-            <div class="div-1">
+            <div id="div-1">
                 <h1>Your Location</h1>
                 <select name="cars" id="cars">
                     <option value="Kukatpally">Kukatpally</option>
@@ -82,13 +82,13 @@
                     <option value="Ameerpet">Ameerpet</option>
                 </select>
             </div>
-            <hr class="hr-1">
-            <div class="hr-2"></div>
-            <div class="div-3">
+            <hr id="hr-1">
+            <div id="hr-2"></div>
+            <div id="div-3">
                 <h2>BOOK AN APPOINTMENT</h2>
                 <input type="text" id="hospname" onkeyup="search();" placeholder="Search for a Hospital">
             </div>
-            <div class="div-2">
+            <div id="div-2">
                 <div class="filter-div">
                     <h3>Filters</h3>
                     <p class="Specialisation">Specialisation</p>
@@ -126,35 +126,32 @@
                         </div>
                         <div style="padding-top: 10px;">
                             <div class="clearfilter">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#B9B9B9"
                                 class="bi bi-x-lg" viewBox="0 0 16 16">
                                 <path
                                     d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                             </svg>
-                            Clear-filters
+                            <div class="text1">Clear-filters</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="div-4">
+            <div id="div-4">
               <div style="padding-top: 10px;">
-                <div class="Filters">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
-                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
-                  </svg>
-                Filters
-                </div>
+                <button type="button" class="Filters" onclick="openPopup()">Filters</button>
             </div>
-                    <div class="results">
+            <div id="popup">
+              Filters
+              <button type="button" class="save" onclick="closePopup()">Save</button>
+            </div>
+            <br>
+                    <div id="results">
                       <div class="container">
-                        <img src="images/doctor3.jpg" class="docImg">
+                        <img src="images/OMNI hospital image.jpg" alt="" srcset="" height="100%" width="20%">
                         <div class="docInfo">
                           <div class="name">
-                            Dr Anish Behl
-                          </div>
-                          <div class="edu">
-                            MBBS, MD (MEDICINE), DM (ENDOCRINOLOGY)
+                            Omni Hospital
                           </div>
                           <div class="location">
                             <div class="locIcon">
@@ -164,7 +161,7 @@
                               </svg>
                             </div>
                             <div class="locInfo">
-                              Omni Hospital, Balaji Nagar, Kukatpally, Hyderabad
+                              Mumbai Hwy, opp. BIG BAZAR, Balaji Nagar, Kukatpally, Hyderabad, Telangana 500072
                             </div>
                           </div>
                           <div class="location">
@@ -175,7 +172,6 @@
                               </svg>
                             </div>
                             <div class="locInfo">
-                              English
                             </div>
                           </div>
                         </div>
