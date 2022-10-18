@@ -89,37 +89,37 @@
         <div class="box-3"><h3>Filters</h3>
         <h4>Specialisation</h4>
         <div class="filterbox">
-          <form action="" method="get" class="Specialisation-box">
-            <input type="checkbox" name="Cardiology" value="Specialisation">
-            <label for="Cardiology">Cardiology</label><br>
+          <form class="Specialisation-box">
+            <label>
+            <input type="checkbox" name="Specialisation" value="Cardiology" id="Cardiology">Cardiology</label><br>
             <hr class="hr1">
-            <input type="checkbox" name="Ophthalmology" value="Specialisation">
-            <label for="Ophthalmology">Ophthalmology</label><br>
+            <label>
+            <input type="checkbox" name="Specialisation" value="Ophthalmology" id="Ophthalmology">Ophthalmology</label><br>
             <hr class="hr1">
-            <input type="checkbox" name="Orthopedics" value="Specialisation">
-            <label for="Orthopedics">Orthopedics</label><br>
+            <label>
+            <input type="checkbox" name="Specialisation" value="Orthopedics" id="Orthopedics">Orthopedics</label><br>
             <hr class="hr1">
-            <input type="checkbox" name="Gynaecology" value="Specialisation">
-            <label for="Gynaecology">Gynaecology</label><br>
+            <label>
+            <input type="checkbox" name="Specialisation" value="Gynaecology" id="Gynaecology">Gynaecology</label><br>
             <hr class="hr1">
-            <input type="checkbox" name="Cardiology" value="Specialisation">
-            <label for="Orthopedics">Orthopedics</label><br>
+            <label>
+            <input type="checkbox" name="Specialisation" value="Orthopedics" id="Orthopedics">Orthopedics</label><br>
             <hr class="hr1">
           </form>
           <h5>Gender</h5>
           <div class="filterbox2">
             <form action="" method="get" class="Specialisation-box2">
-              <input type="checkbox" name="Male" value="Gender">
+              <input type="checkbox" name="Gender" value="Male">
               <label for="Male">Male</label><br>
               <hr class="hr1">
-              <input type="checkbox" name="Female" value="Specialisation">
+              <input type="checkbox" name="Gender" value="Female">
               <label for="Female">Female</label><br>
             </form>
             </div>
             <div class="filterbox3">
               <label for="Clear-filters"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-              </svg>  Clear-filters</label>
+              </svg>Clear filters</label>
             </div>
         </div>
         </div>
@@ -128,10 +128,10 @@
           <div class="results">
             <ul id="myUL">
               <li>
-                <div class="container">
+                <div class="container" data-id="OmniHospital" data-category="Cardiology Orthopedics">
                   <img src="images/OMNI hospital image.jpg" class="docImg">
                   <div class="docInfo">
-                    <div class="name">
+                    <div class="name hospital" data-id="Omni Hospital" data-category="Cardiology Orthopedics">
                       Omni Hospital
                     </div>
                     <div class="location">
@@ -162,7 +162,7 @@
                 </div>
               </li>
               <li>
-                <div class="container">
+                <div class="container flower">
                   <img src="images/OMNI hospital image.jpg" class="docImg">
                   <div class="docInfo">
                     <div class="name">
@@ -196,7 +196,7 @@
                 </div>
               </li>
               <li>
-                <div class="container">
+                <div class="container flower">
                   <img src="images/OMNI hospital image.jpg" class="docImg">
                   <div class="docInfo">
                     <div class="name">
@@ -230,7 +230,7 @@
                 </div>
               </li>
               <li>
-                <div class="container">
+                <div class="container flower">
                   <img src="images/OMNI hospital image.jpg" class="docImg">
                   <div class="docInfo">
                     <div class="name">
@@ -248,7 +248,7 @@
                       </div>
                     </div>
                     <div class="location">
-                      <div class="locIcon">
+                      <div class="locIco Orthopedicsn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                           <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                         </svg>
@@ -391,5 +391,58 @@
       </ul>
     </div>
   </body>
-  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+      var $filterCheckboxes = $('input[type="checkbox"]');
+  var filterFunc = function() {
+    
+    var selectedFilters = {};
+  
+    $filterCheckboxes.filter(':checked').each(function() {
+  
+      if (!selectedFilters.hasOwnProperty(this.name)) {
+        selectedFilters[this.name] = [];
+      }
+  
+      selectedFilters[this.name].push(this.value);
+    });
+  
+    // create a collection containing all of the filterable elements
+    var $filteredResults = $('.flower');
+  
+    // loop over the selected filter name -> (array) values pairs
+    $.each(selectedFilters, function(name, filterValues) {
+  
+      // filter each .flower element
+      $filteredResults = $filteredResults.filter(function() {
+  
+        var matched = false,
+          currentFilterValues = $(this).data('category').split(' ');
+  
+        // loop over each category value in the current .flower's data-category
+        $.each(currentFilterValues, function(_, currentFilterValue) {
+  
+          // if the current category exists in the selected filters array
+          // set matched to true, and stop looping. as we're ORing in each
+          // set of filters, we only need to match once
+  
+          if ($.inArray(currentFilterValue, filterValues) != -1) {
+            matched = true;
+            return false;
+          }
+        });
+  
+        // if matched is true the current .flower element is returned
+        return matched;
+  
+      });
+    });
+  
+    $('.flower').hide().filter($filteredResults).show();
+  }
+  
+  $filterCheckboxes.on('change', filterFunc);  
+  
+  </script>
+<script src="js/index.js"></script>
 </html>
