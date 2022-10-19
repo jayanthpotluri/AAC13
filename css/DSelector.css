@@ -8,6 +8,7 @@
   margin-top: 60px;
   background: #EBF2FA;
   border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
 }
 
@@ -16,12 +17,15 @@
   width: 33%;
   border-radius: 8px 0 0 8px;
   overflow: hidden;
+  z-index: 100;
   border-right: 2px solid #B6B6B6;
 }
 
 .doctor-info {
   background-color: #EBF2FA;
   width: 67%;
+  overflow: hidden;
+  z-index: 10;
   border-radius: 0 8px 8px 0;
 }
 
@@ -104,19 +108,18 @@ h3 {
   font-weight: 500;
   font-size: 1em;
   line-height: 15px;
-  height: 5%;
+  height: 4%;
 }
 
 .results {
-  height: 90%;
+  height: 93%;
   overflow-y: scroll;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 .container {
   background: #ffffff;
   width: 99%;
-  height: 22%;
   min-height: 100px;
   border: 2px solid #B6B6B6;
   border-radius: 8px;
@@ -135,7 +138,7 @@ h3 {
 
 .docImg {
   width: 20%;
-  min-width: 150px;
+  /* min-width: 150px; */
   height: 100%;
   object-fit: cover;
 }
@@ -151,6 +154,7 @@ h3 {
   padding: 13px 12px;
   border: none;
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .name {
@@ -168,24 +172,233 @@ h3 {
   /* white-space: nowrap; */
 }
 
-.container .locInfo{
+.container .locInfo {
   font-size: 13px;
   font-weight: 300;
 }
 
-.container .locIcon{
+.container .locIcon {
   padding: 0;
 }
 
-.container .location{
+.container .location {
   margin: 0;
 }
 
 ::-webkit-scrollbar {
-  width: 3px;        
+  width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #8d8d8d;
-  border-radius: 20px;       
+  border-radius: 20px;
+}
+
+#darkbox {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  left: -5%;
+  top: -40%;
+  background-color: #cde1f6;
+  transform: rotate(-25.16deg);
+  z-index: -4;
+}
+
+#lightbox {
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  bottom: 55%;
+  overflow: hidden;
+  background-color: #d8eaff;
+  transform: rotate(25.16deg);
+  z-index: -3;
+}
+
+@media screen and (min-width:650px) and (max-width:956px) {
+  #lightbox {
+    position: absolute;
+    height: 200%;
+    width: 1200px;
+    bottom: 60%;
+    overflow: hidden;
+    background-color: #d8eaff;
+    transform: rotate(35.16deg) translateX(50px);
+    z-index: -4;
+  }
+
+  #darkbox {
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    left: -20%;
+    top: -25%;
+    background-color: #cde1f6;
+    transform: rotate(-33.16deg);
+    z-index: -5;
+  }
+}
+
+.hospinfo {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .hospinfo {
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    /* min-height: 77px; */
+    justify-content: space-between;
+    border: 2px solid #B6B6B6;
+    background: #fff;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+  .hospimg {
+    width: 16%;
+    min-width: 120px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #hosploc {
+    width: 70%;
+    padding: 5px;
+  }
+
+  .hospname {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .hosp-info {
+    display: none;
+  }
+
+  .results {
+    padding: 0;
+  }
+
+  .doctor-info {
+    width: 100%;
+    z-index: 10;
+  }
+
+  .docInfo {
+    width: 100%;
+  }
+
+  #content-box {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .edu {
+    font-size: 8px;
+  }
+
+  .results {
+    height: 85%;
+    border-radius: 8px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .docImg {
+    width: 100%;
+  }
+
+  .container .locInfo {
+    font-size: 12px;
+  }
+
+  .book {
+    margin-bottom: 20px;
+  }
+
+  .prompt {
+    height: 8%;
+  }
+
+  .prompt-text {
+    padding: 10px 5px;
+    font-size: 20px;
+  }
+
+  .number {
+    font-size: 12px;
+  }
+
+  #lightbox {
+    position: absolute;
+    height: 200%;
+    width: 1200px;
+    bottom: 60%;
+    overflow: hidden;
+    background-color: #d8eaff;
+    transform: rotate(35.16deg) translateX(50px);
+    z-index: -4;
+  }
+
+  #darkbox {
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    left: -85%;
+    top: -35%;
+    background-color: #cde1f6;
+    transform: rotate(-33.16deg);
+    z-index: -5;
+  }
+
+  .location,
+  .locInfo,
+  .locationInfo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .locInfo,
+  .conInfo {
+    font-size: 9px;
+  }
+
+  .conIcon,
+  .locIcon {
+    padding: 0;
+    width: 14px;
+  }
+
+  .locIcon {
+    margin-right: 4px;
+  }
+
+  .conInfo {
+    padding-top: 3px;
+  }
+}
+
+@media screen and (min-height: 700px) and (max-width: 650px) {
+  #content-box{
+    height: 87%;
+    position: relative;
+    max-height: none;
+  }
+  #content{
+    position: absolute;
+    height: 100%;
+    margin: auto;
+  }
 }

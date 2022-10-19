@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
     <title>Book an Appointment</title>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/DSelector.css" />
@@ -20,7 +21,9 @@
 
     <nav>
       <div id="nav-contents">
-        <img src="images/logo-placeholder.png" alt="logo" id="nav-logo" />
+        <div class="nvlogo">
+          <img src="images/logo-placeholder.png" alt="logo" id="nav-logo" />
+        </div>
         <ul id="nav-links">
           <a href="Home.html">
             <li id="home">Home</li>
@@ -49,8 +52,8 @@
           </svg>
       </div>
       <div id="mobmenu">
-        <a href="Home.html" style="background: #3e3e3e; color: white" onclick="toggleMenu();">
-        <div class="moblink" style="background: #3e3e3e; color: white;">
+        <a href="Home.html" onclick="toggleMenu();">
+        <div class="moblink">
             Home
           </div>
         </a>
@@ -102,12 +105,47 @@
           </div>
         </div>
         <div class="doctor-info">
+          <div id="darkbox"></div>
+          <div id="lightbox"></div>
           <div class="prompt">
             <div class="prompt-text">
               BOOK AN APPOINTMENT
             </div>
           </div>
           <div class="docResults">
+            <div class="hospinfo">
+                <img src="images/OMNI hospital image.jpg" class="hospimg">
+              <div id="hosploc">
+                <div class="hospname">
+                  Omni Hospital
+                </div>
+                <div class="hosploc">
+                  <div class="locationInfo">
+                    <div class="location">
+                      <div class="locIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                      </div>
+                      <div class="locInfo">
+                        Mumbai Hwy, opp. BIG BAZAR, Balaji Nagar, Kukatpally, Hyderabad, Telangana 500072
+                      </div>
+                    </div>
+                    <div class="location">
+                      <div class="conIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                      </div>
+                      <div class="conInfo">
+                        088801 01000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="resContent">
               <div class="number">
                 3 Doctors Available
@@ -145,10 +183,10 @@
                       </div>
                     </div>
                   </div>
+                  <a href="consult.html">
                   <button class="book">
                     Book Apointment
                   </button>
-                  <a href="consult.html">
                   </a>
                 </div>
                 <div class="container">
@@ -180,7 +218,15 @@
     <!-- Footer -->
 
     <div id="footer">
-      <p>&copy; 2022 Apollo Hospitals Ltd. All rights reserved</p>
+      <p class="desk">&copy; 2022 AAC GRIET Ltd. All rights reserved</p>
+      <p class="mob">&copy; 2022 AAC GRIET Ltd.</p>
+      <div class="secured">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-lock2" viewBox="0 0 16 16" >
+          <path d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0zM7 7v1h2V7a1 1 0 0 0-2 0z"/>
+          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+        </svg>
+        Secured
+      </div>
       <ul id="footer-list">
         <li>
           <a href="">
