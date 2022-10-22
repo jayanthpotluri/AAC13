@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+#cross{
+    display: none;
+}
 
 /* HIDDEN FOR DESKTOP */
 #appointment-box {
@@ -14,10 +17,12 @@
     /* animation-iteration-count: 1; */
     animation-fill-mode: forwards;
 }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -28,10 +33,12 @@
     /* animation-iteration-count: 1; */
     animation-fill-mode: forwards;
 }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -122,9 +129,10 @@ nav {
     background-color: #bebebe;
 }
 
-.nvlogo{
+.nvlogo {
     height: 65px;
-    background-color: red;
+    /* background-color: red; */
+    width: 75px;
 }
 
 #nav-contents {
@@ -201,7 +209,7 @@ nav {
     }
 
     nav {
-        height: 75px;
+        /* height: 75px; */
     }
 
     #nav-contents {
@@ -239,7 +247,7 @@ nav {
         background-color: rgba(0, 0, 0, 0.4);
         z-index: 100;
         width: 100%;
-        height: calc(100% - 300px);
+        height: calc(100% - 290px);
         bottom: 0;
     }
 
@@ -248,7 +256,8 @@ nav {
     }
 
     #nav-logo {
-        height: 75px;
+        /* height: 75px; */
+        width: 75px;
     }
 
     #footer p {
