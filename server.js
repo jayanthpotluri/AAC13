@@ -27,8 +27,10 @@ app.use(cors());
 // Set Views
 app.set('views', './views');
 app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
+//app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 const User = Db.collection("Users")
+const Hospital = Db.collection("hospitals")
 
 
 
@@ -48,7 +50,7 @@ app.get('/AboutUs', (req, res) => {
    res.render('AboutUs.html')   
 })
 app.get('/ULogin', (req, res) => {
-   res.render('ULogin.html')   
+   res.render('ULogin')   
 })
 app.get('/Dlogin', (req, res) => {
    res.render('Dlogin.html')   
@@ -63,13 +65,33 @@ app.get('/Home', (req, res) => {
    res.render('Home.html')   
 })
 
-app.get('/appointment', (req, res) => {
+app.get('/appointment', async(req, res) => {
    
    try {
    if(req.session.user.email)
    {
    //res.render('appointment.html',{user:req.session.user.email })  
-      res.render('appointment.html')
+     // res.render('appointment.html')
+     
+     console.log("Email"+req.session.user.email)
+     const snapshot= await Hospital.get()
+     let hospitalsList=[]
+    
+     snapshot.forEach((doc) => {
+           hospitalsList.push( doc.data())
+    });
+    
+    
+     console.log(hospitalsList)
+    // console.log(hospitalsList[0])
+    var str = JSON.parse(JSON.stringify(hospitalsList))
+
+    str.forEach(function(data){
+     console.log(data.name);
+    });
+
+     
+    res.render('appointment',{data:{user:req.session.user.email,hospitals:str} })  
    }  
 }  
 catch(e){
@@ -150,6 +172,24 @@ app.post('/signup',async(req, res) => {
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
 
+
+// CREATE TABLE `Appointment` (
+//    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//    `vendor_Id` int(10) unsigned NOT NULL,
+//    `account_Id` int(10) unsigned NOT NULL,
+//    `event_Id` int(10) unsigned NOT NULL,
+//    `assignee_Id` int(10) unsigned NOT NULL,
+//    `starttime` datetime NOT NULL,
+//    `endtime` datetime NOT NULL,
+//    `book` tinyint(4) DEFAULT '0',
+//    `code` varchar(20) DEFAULT NULL,
+//    `deleted_at` datetime DEFAULT NULL,
+//    `deleted_By_Id` int(10) unsigned DEFAULT NULL,
+//    `updated_Appointment_At` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+//    `created_Appointment_At` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+//    PRIMARY KEY (`id`),
+//    UNIQUE KEY `appointments_code_unique` (`code`)
+//  ) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
 
 

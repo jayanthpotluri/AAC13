@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/Dlogin.css" />
+</head>
+
+<body>
+    <!-- Titled Box -->
+
+    <div id="box-container">
+        <div id="tilted-box"></div>
+    </div>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div id="nav-contents">
+            <img src="img/logo-placeholder.png" alt="logo" id="nav-logo" />
+            <ul id="nav-links">
+                <a href="/">
+                    <li id="home">Home</li>
+                </a>
+                <a href="AboutUs">
+                    <li id="aboutus">About Us</li>
+                </a>
+                <a href="ULogin">
+                    <li id="login" style="background: #3e3e3e; color: white">
+                        Login/Register
+                    </li>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16" id="menu">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contents -->
+
+    <div id="content">
+        <div id="content-box">
+            <div class="text">
+                <div class="changer">
+                    <span>Doctor Sign in</span>
+                </div>
+                <div class="form">
+                    <div class="title">Enter Your Credentials</div>
+                    <div class="tab-content">
+                        <div class="form-contents active">
+                            <div class="email-login">
+                                Doctor ID
+                                <input type="email" name="Email" id="email-field" class="fields"
+                                    placeholder="Enter your ID" />
+                            </div>
+                            <div class="password-login">
+                                <div class="password">
+                                    Password <a href="" class="forgot">Forgot password?</a>
+                                </div>
+                                <input type="password" name="Password" id="login-password" class="fields"
+                                    placeholder="Enter your Password" />
+                            </div>
+                            <div class="signin-button">
+                                <button type="submit" id="signin-btn">Sign in</button>
+                                <div class="doctor-text">
+                                    Login as User?
+                                    <a href="ULogin" class="doctor-prompt">Click Here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="graphic">
+                <img src="img/132.jpg" class="img" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        Having Issues? Contact us at
+        <a href="mailto:support@example.com">support@example.com</a>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

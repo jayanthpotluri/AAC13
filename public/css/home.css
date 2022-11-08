@@ -1,0 +1,168 @@
+#appointment-box {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 60px;
+    background: #EBF2FA;
+    border-radius: 8px;
+    box-shadow: 0px 4px 19px -3px rgba(0, 0, 0, 0.25);
+}
+
+#appointment-box {
+    animation: fadeInAnimation ease-in-out 0.3s;
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#banner {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 8px;
+}
+
+
+.text {
+    text-align: center;
+    position: relative;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 44px;
+    margin: auto;
+    padding-top: 6%;
+}
+
+.text h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: auto;
+    padding-top: 4%;
+    width: 100%;
+    max-width: 800px;
+}
+
+.location-selector {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 4%;
+}
+
+#Book {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    padding: 10px 25px;
+    background: #66ADFF;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.booklink {
+    text-decoration: none;
+    color: white;
+}
+
+select {
+    margin: 0px 20px;
+    padding: 8px 18px;
+    background: #F1F1F5;
+    border: 2px solid #B4B4B4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#bannermob {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 650px) and (max-height:700px){
+    #banner {
+        display: none;
+    }
+
+    #bannermob {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        border-radius: 8px;
+    }
+
+    .text h1 {
+        font-size: 34px;
+        padding-top: 4%;
+    }
+
+    .text h2 {
+        font-size: 15px;
+        padding-top: 10%;
+        width: 100%;
+    }
+
+    .text {
+        padding: 10% 12px;
+    }
+
+    .location-selector {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-height: 700px) and (max-width: 650px) {
+    #banner {
+        display: none;
+    }
+
+    #bannermob {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        border-radius: 8px;
+    }
+
+    .text h1 {
+        font-size: 32px;
+        padding-top: 8%;
+    }
+
+    .text h2 {
+        font-size: 18px;
+        padding: 0 10px;
+        padding-top: 14%;
+        width: 100%;
+    }
+
+    .text {
+        padding: 22% 8px;
+    }
+
+    .location-selector {
+        margin-top: 14%;
+    }
+    #Book{
+        margin-top: 4%;
+    }
+}
+
+

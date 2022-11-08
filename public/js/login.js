@@ -27,23 +27,3 @@ tabs.forEach(tab => {
       tab.classList.add('actived')
     })
   })
-
-  function showPass() {
-    var x = document.getElementById("login-password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }  
-
-  function showPassText() {
-    var x = document.getElementById("login-password");
-    if (x.type === "password") {
-      x.type = "text";
-      document.getElementById("showpass").checked = true;
-    } else {
-      x.type = "password";
-      document.getElementById("showpass").checked = false;
-    }
-  } 

@@ -1,18 +1,12 @@
 function toggleMenu() {
   var menuBox = document.getElementById("mobmenu");
-  var menuIcon = document.getElementById("menu");
-  var cross = document.getElementById("cross");
   // var Body = document.getElementsByTagName("body");
   if (menuBox.style.display == "block") {
     // if is menuBox displayed, hide it
     menuBox.style.display = "none";
-    cross.style.display = "none";
-    menuIcon.style.display = "block";
   } else {
     // if is menuBox hidden, display it
     menuBox.style.display = "block";
-    cross.style.display = "block";
-    menuIcon.style.display = "none";
   }
   var Box = document.getElementById("blackbox");
   if (Box.style.display == "block") {
@@ -42,3 +36,10 @@ function search() {
     }
   }
 }
+document.getElementById('showpass').onclick = function() {
+  if ( this.checked ) {
+     document.getElementById('login-password').type = "text";
+  } else {
+     document.getElementById('login-password').type = "password";
+  }
+};
